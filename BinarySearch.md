@@ -1,7 +1,7 @@
 #  Бинарный поиск
 
 ## Пример алгоритма из книги "Грокаем алгоритмы"
-```
+```SWIFT
 func binarySearch(sortArray: [Int], searchNumber: Int) -> Any {
     var low = 0
     var high = sortArray.count-1
@@ -38,7 +38,7 @@ __Ответ:__ 8 проверок, так как log256 = 8
 
 
 ## Мои решенные задачи с [Leetcode](https://leetcode.com/PollyVern/)
-```
+```SWIFT
 class Solution {
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         var lowIndex = 0
@@ -64,7 +64,7 @@ Solution().searchInsert([1,3,5,6], 7) //4
 Solution().searchInsert([1,3,5,6], 2) //1
 Solution().searchInsert([1,3,5,6], 5) //2
 ```
-```
+```SWIFT
 class Solution {
     func mySqrt(_ x: Int) -> Int {
         var lowIndex = 0
