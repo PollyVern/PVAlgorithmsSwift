@@ -1,2 +1,2 @@
-# PVGrokkingAlgorithmsSwift
-● Упражнения из книги "Грокаем алгоритмы"
+# PVAlgorithmsSwift
+● Бинарный поиск
