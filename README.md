@@ -9,8 +9,7 @@
 * [Бинарный поиск](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/BinarySearch.md)
 
 ## Структуры данных
-* Списки
-* Массивы
+* [Массивы](https://github.com/PollyVern/PVAlgorithmsSwift/blob/fbc683cb9b8acdf097a1a3fd95371f73d9928a61/Algorithms/ArrayList.md)
 * [Связанный список](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/LinkedList.md)
 * Стеки
 * Куча
