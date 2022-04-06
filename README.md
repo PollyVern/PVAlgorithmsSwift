@@ -6,6 +6,8 @@
 * Задача о коммивояжере
 * [Сортировка выбором](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/SelectionSort.md)
 * Связанный список
+* Рекурсия
+* Хвостовая рекурсия
 
 ## "О-большое"
 | Алгоритм  | "О-большое" |
