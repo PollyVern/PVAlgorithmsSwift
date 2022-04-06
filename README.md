@@ -1,14 +1,26 @@
-# PVAlgorithmsSwift
+# Алгоритмы
 
-## Алгоритмы
-* [Бинарный поиск](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/BinarySearch.md)
-* Простой поиск
-* Задача о коммивояжере
+## Сортировка
 * [Сортировка выбором](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/SelectionSort.md)
+* Быстрая сортировка ("Разделяй и властвуй")
+
+## Поиск в списках
+* Простой (линейный) поиск
+* [Бинарный поиск](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/BinarySearch.md)
+
+## Структуры данных
+* Списки
+* Массивы
 * Связанный список
+* Стеки
+
+## Рекурсия
 * Рекурсия
 * Хвостовая рекурсия
-* Быстрая сортировка ("Разделяй и властвуй")
+
+## ??
+* Задача о коммивояжере
+
 
 ## "О-большое"
 | Алгоритм  | "О-большое" |
