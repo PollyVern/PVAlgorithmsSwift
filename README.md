@@ -11,8 +11,9 @@
 ## Структуры данных
 * Списки
 * Массивы
-* Связанный список
+* [Связанный список](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/LinkedList.md)
 * Стеки
+* Куча
 
 ## Рекурсия
 * Рекурсия
