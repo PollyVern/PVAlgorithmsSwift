@@ -1,5 +1,9 @@
 #  Бинарный поиск
 
+<p align="center">
+<img src="https://github.com/PollyVern/ContentForRepositories/blob/18473c5c205a39c06d0d8f6af9cab21ffa8f3747/Algorithms/BinarySearchPicture.png">
+</p>
+
 ## Пример алгоритма из книги "Грокаем алгоритмы"
 ```SWIFT
 func binarySearch(sortArray: [Int], searchNumber: Int) -> Any {
