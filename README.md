@@ -15,7 +15,7 @@
 * Куча
 
 ## Рекурсия
-* Рекурсия
+* [Рекурсия](https://github.com/PollyVern/PVAlgorithmsSwift/blob/13982fc3e00f8aa94309f2299b818170d7d1ebb1/Algorithms/Recursion.md)
 * Хвостовая рекурсия
 
 ## ??
