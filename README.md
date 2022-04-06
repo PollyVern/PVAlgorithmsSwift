@@ -4,7 +4,7 @@
 * [Бинарный поиск](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/BinarySearch.md)
 * Простой поиск
 * Задача о коммивояжере
-* Сортировка выбором
+* [Сортировка выбором](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/SelectionSort.md)
 * Связанный список
 
 ## "О-большое"
