@@ -39,7 +39,33 @@ binarySearch(sortArray: [0,1,2,3,4,5,6,7,8], searchNumber: 8) //Число 8 н�
 binarySearch(sortArray: [0,1,2,3,4,5,6,7,8], searchNumber: 9) //Число 9 не найдено
 ```
 
+## Шаблон 2
+Используется для поиска элемента или условия, которое требует доступа к текущему индексу и индексу его ближайшего правого соседа в массиве.
+```SWIFT
+func binarySearch(nums: [Int], target: Int) -> Int {
+    if nums.isEmpty || nums.count == 0 {
+        return -1
+    }
+    
+    var left = 0
+    var right = nums.count-1
+    while left < right {
+        let mid = left + (right - left) / 2
+        if nums[mid] == target {
+            return mid
+        } else if nums[mid] < target {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
 
+    if left != nums.count && nums[left] == target {return left}
+    return -1
+}
+
+binarySearch(nums: [0,2,4,6,7], target: 2) //1
+```
 
 
 ## Упражнения из книги "Грокаем алгоритмы"
