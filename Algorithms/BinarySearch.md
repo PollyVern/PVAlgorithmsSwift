@@ -55,7 +55,9 @@ __Ответ:__ 8 проверок, так как log256 = 8
 
 
 
-## Мои решенные задачи с [Leetcode](https://leetcode.com/PollyVern/)
+## Несколько задач с [Leetcode](https://leetcode.com/PollyVern/)
+
+### 35. Search Insert Position 
 ```SWIFT
 class Solution {
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
@@ -82,6 +84,7 @@ Solution().searchInsert([1,3,5,6], 7) //4
 Solution().searchInsert([1,3,5,6], 2) //1
 Solution().searchInsert([1,3,5,6], 5) //2
 ```
+### 69. Sqrt(x)
 ```SWIFT
 class Solution {
     func mySqrt(_ x: Int) -> Int {
@@ -104,4 +107,61 @@ Solution().mySqrt(2) //1
 Solution().mySqrt(3) //1
 Solution().mySqrt(5) //2
 Solution().mySqrt(10) //3
+```
+### 33. "Search in Rotated Sorted Array"
+```SWIFT
+class Solution {
+    func search(_ nums: [Int], _ target: Int) -> Int {
+        
+        if nums.count == 1 {
+            return nums[0] == target ? 0 : -1
+        }
+        
+        var lowIndex = searchPivotIndex(nums, target).lowIndex
+        var highIndex = searchPivotIndex(nums, target).highIndex
+                
+        while lowIndex <= highIndex {
+            let middleIndex = lowIndex + (highIndex - lowIndex)/2
+
+            if nums[middleIndex] == target {
+                return middleIndex
+            } else if nums[middleIndex] > target {
+                highIndex = middleIndex - 1
+            } else {
+                lowIndex = middleIndex + 1
+            }
+        }
+        return -1
+    }
+    
+    private func searchPivotIndex(_ nums: [Int], _ target: Int) -> (lowIndex: Int, highIndex: Int) {
+        
+        var lowIndex = 0
+        var highIndex = nums.count-1
+        
+        while lowIndex < highIndex {
+            let midIndex = lowIndex + (highIndex - lowIndex)/2
+            
+            if nums[midIndex] > nums[highIndex] {
+                lowIndex = midIndex + 1
+            } else {
+                highIndex = midIndex
+            }
+        }
+
+        let pivotIndex = lowIndex
+
+        lowIndex = 0
+        highIndex = nums.count - 1
+        
+        if nums[pivotIndex] <= target && target <= nums[highIndex] {
+            lowIndex = pivotIndex
+        } else {
+            highIndex = pivotIndex
+        }
+        
+        return (lowIndex, highIndex)
+    }
+}
+
 ```
