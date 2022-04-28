@@ -69,6 +69,62 @@ binarySearch(nums: [0,2,4,6,7], target: 2) //1
 
 ## Шаблон 3
 Используется для поиска элемента или условия, которое требует доступа к текущему индексу и его непосредственному индексу левого и правого соседа в массиве.
+```SWIFT
+class Solution {
+    
+    func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
+        
+        var low = 0
+        var high = nums.count-1
+        
+        if nums.isEmpty {
+            return [-1,-1]
+        }
+        
+        if nums[0] == target {
+            return identicalIndexTarget(nums, target, 0)
+        } else {
+            while low <= high {
+                let mid = low + (high - low)/2
+                let guess = nums[mid]
+                
+                if guess == target && nums[mid-1] < target{
+                    return identicalIndexTarget(nums, target, mid)
+                } else if guess < target {
+                    low = mid + 1
+                } else {
+                    high = mid - 1
+                }
+            }
+        }
+
+        return [-1,-1]
+    }
+    
+    private func identicalIndexTarget(_ nums: [Int], _ target: Int, _ mid: Int) -> [Int] {
+        var indexArray = [Int]()
+        
+        for i in mid...nums.count-1 {
+            if nums[i] == target {
+                indexArray.append(i)
+            } else {
+                break
+            }
+        }
+        
+        if indexArray.count == 1 {
+            indexArray.append(indexArray[0])
+        } else if indexArray.count > 2 {
+            var newIndexArray = [Int]()
+            newIndexArray.append(indexArray[0])
+            newIndexArray.append(indexArray.last!)
+            return newIndexArray
+        }
+        
+        return indexArray
+    }
+}
+```
 
 ## Упражнения из книги "Грокаем алгоритмы"
 ### Упражнение 1.1 (стр.27)
