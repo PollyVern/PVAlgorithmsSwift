@@ -4,6 +4,10 @@
 <img src="https://github.com/PollyVern/ContentForRepositories/blob/main/Algorithms/%20RecursionPicture.png">
 </p>
 
+## Применение
+Рекурсия рассматривается, когда нужно:
+* ---
+
 ## Упражнения из книги "Грокаем алгоритмы"
 ### Упражнение 4.1 (стр. 85)
 
