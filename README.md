@@ -9,13 +9,13 @@
 * [Бинарный поиск](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/BinarySearch.md)
 
 ## Структуры данных
-* [Массивы](https://github.com/PollyVern/PVAlgorithmsSwift/blob/fbc683cb9b8acdf097a1a3fd95371f73d9928a61/Algorithms/ArrayList.md)
+* [Массивы](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/ArrayList.md)
 * [Связанный список](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/LinkedList.md)
-* [Стеки](https://github.com/PollyVern/PVAlgorithmsSwift/blob/d308fc76dde3a14feb829beac3b1eed5b0b3e294/Algorithms/Stack.md)
+* [Стеки](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/Stack.md)
 * Куча
 
 ## Рекурсия
-* [Рекурсия](https://github.com/PollyVern/PVAlgorithmsSwift/blob/13982fc3e00f8aa94309f2299b818170d7d1ebb1/Algorithms/Recursion.md)
+* [Рекурсия](https://github.com/PollyVern/PVAlgorithmsSwift/blob/main/Algorithms/Recursion.md)
 * Хвостовая рекурсия
 
 ## ??
